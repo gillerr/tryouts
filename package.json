@@ -5,8 +5,9 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "lint": "prettier --check *.{ts,js,html,scss,json,md}",
-    "format": "prettier --write *.{ts,js,html,scss,json,md}"
+    "lint": "prettier --check **/*.{ts,js,html,scss,json,md}",
+    "format": "prettier --write **/*.{ts,js,html,scss,json,md}",
+    "prepare": "husky install"
   },
   "private": true,
   "dependencies": {
@@ -35,12 +36,14 @@
     "@typescript-eslint/eslint-plugin": "5.3.0",
     "@typescript-eslint/parser": "5.3.0",
     "eslint": "^8.2.0",
+    "husky": "^7.0.4",
     "jasmine-core": "~3.10.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "lint-staged": "^12.1.7",
     "prettier": "^2.5.1",
     "typescript": "~4.5.2"
   }
